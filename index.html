@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LLM Knowledge Extractor</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Domain-Aware Knowledge Extractor</h1>
+        <p>Using LLMs to convert unstructured text into a knowledge graph.</p>
+    </header>
+    <main>
+        <div class="input-section">
+            <input type="text" id="entityInput" placeholder="What is the news about Google, Microsoft, etc.?">
+            <button id="queryBtn">Analyze</button>
+        </div>
+        <div class="output-section">
+            <div class="graph-wrapper">
+                <h3>Relationship Graph</h3>
+                <div id="graph-container"><span class="placeholder-text">Graph will appear here...</span></div>
+            </div>
+            <div class="summary-wrapper">
+                <h3>AI Generated Summary</h3>
+                <div id="summary-output"><pre class="placeholder-text">Summary will appear here...</pre></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
